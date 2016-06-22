@@ -1,0 +1,14 @@
+<div class="content">
+<nav class="title" id="title">
+	<div class="biao">
+		<a class="wz active" ng-class="{active:name=='文章'}" ng-click="name='文章'">文章</a>
+	</div>
+	<div class="bt">
+		<ul>
+			<li class="allcate" ng-repeat="v in allcate">
+				<a href={{v.href}} ng-class="{active:v.state}" ng-click="v.state=!v.state">{{v.name}}</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+</div>
